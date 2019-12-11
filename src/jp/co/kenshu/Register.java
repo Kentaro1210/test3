@@ -11,20 +11,22 @@ public class Register {
 		ArrayList<Kaiin> kaiinAll = new ArrayList<Kaiin>();
 	
 		//kaiinAddメソッドを呼び出して結果をKaiinAllに追加する
-		kaiinAll.add(kaiinAdd(0001,"山田太郎"));
-		kaiinAll.add(kaiinAdd(0002,"鈴木花子"));
-		kaiinAll.add(kaiinAdd(0003,"佐藤琢磨"));
+		kaiinAll.add(kaiinAdd(0001, "山田太郎"));
+		kaiinAll.add(kaiinAdd(0002, "鈴木花子"));
+		kaiinAll.add(kaiinAdd(0003, "佐藤琢磨"));
 		
 		
 	    DecimalFormat dformat = new DecimalFormat("0000");
 	
 		//表示
-		for(int i =0; i<=2; i++) {
+	    //Register.java(22)拡張for文に書き換えてください。
+		for(Kaiin kaiin : kaiinAll) {
 		    System.out.println(
 		    		
-		    kaiinAll.get(i).getname() + "さんの会員IDは" 
-		    + dformat.format(kaiinAll.get(i).getid())+ "です。"
-		    +"登録：" +kaiinAll.get(i).getaddDate()
+		    kaiin.getname() + "さんの会員IDは" 
+		    + dformat.format(kaiin.getid())+ "です。"
+		    +"登録：" + kaiin.getaddDate()
+		    
 		    );
 	     }	
 	}
