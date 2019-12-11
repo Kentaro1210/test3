@@ -1,5 +1,11 @@
 package jp.co.kenshu;
 
+
+/**
+ * Walkman, iPodを実際に使用
+ * @author k_sakaguchi
+ *
+ */
 public class MusicPlayAction {
 
     public static void main(String[] args) {
@@ -10,9 +16,9 @@ public class MusicPlayAction {
 	    //曲名とアーティスト名を引数にしてWalkｍanを使用してみる
 	    if(walkman.useWalkman("海の幽霊", "")) {
 	   
-	    walkman.start();
-	    walkman.pause();
-	    walkman.stop();
+	        walkman.start();
+	        walkman.pause();
+	        walkman.stop();
 	    }
 	    
         System.out.println(); //1行開ける
@@ -23,9 +29,9 @@ public class MusicPlayAction {
 	    //曲名とアーティスト名を引数にしてiPodを使用してみる
         if(ipod.useIpod("ブルーバード", "いきものがかり")) {
         
-        ipod.start();
-        ipod.pause();
-        ipod.stop();
+            ipod.start();
+            ipod.pause();
+            ipod.stop();
         }
 	}
 
