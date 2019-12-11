@@ -8,7 +8,7 @@ public class Kaiin {
 	private String addDate;
 	
 	
-	//idのgetterとsetter 
+	//idのgetterとsetterを作成
     public int getid() {
         return id;
     }
@@ -18,7 +18,7 @@ public class Kaiin {
     }
     
     
-    //nameのgetterとsetter 
+    //nameのgetterとsetterを作成
     public String getname() {	
         return name;	
     }
@@ -28,7 +28,7 @@ public class Kaiin {
     }
     
     
-  //addDateのgetterとsetter 
+  //addDateのgetterとsetterを作成
     public String getaddDate() {
         return addDate;
     }
