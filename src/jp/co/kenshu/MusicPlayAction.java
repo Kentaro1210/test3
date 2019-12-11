@@ -8,22 +8,25 @@ public class MusicPlayAction {
 	    Walkman walkman = new Walkman();
 		
 	    //曲名とアーティスト名を引数にしてWalkｍanを使用してみる
-	    walkman.useWalkman("", "米津玄師");
-	    
+	    if(walkman.useWalkman("海の幽霊", "")) {
+	   
 	    walkman.start();
 	    walkman.pause();
 	    walkman.stop();
+	    }
+	    
         System.out.println(); //1行開ける
 	
 	    //iPodクラスのインスタンスを作成する
 	    iPod ipod = new iPod(); 
 		
 	    //曲名とアーティスト名を引数にしてiPodを使用してみる
-        ipod.useIpod("ブルーバード", "いきものがかり");
+        if(ipod.useIpod("ブルーバード", "いきものがかり")) {
         
         ipod.start();
         ipod.pause();
         ipod.stop();
+        }
 	}
 
 }

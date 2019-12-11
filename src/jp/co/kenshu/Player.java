@@ -1,5 +1,9 @@
 package jp.co.kenshu;
 
+
+/**
+ * インターフェースPlayerを作成
+ */
 public interface Player {
 		
 	//再生メソッドの宣言
